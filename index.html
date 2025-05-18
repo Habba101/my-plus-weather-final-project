@@ -3,24 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Plus Weather Project</title>
   </head>
   <body>
-    <h1>Portia Rahaba Nomvume</h1>
+    <div class="weather-card">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter city..."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Habba101" target="_blank">Rahaba</a>
-      Motaung, is open-sourced on
-      <a href="https://github.com/Habba101?tab=repositories" target="_blank"
-        >Github</a
-      >
-      and hosted on
-      <a
-        href="https://habbas-weather-forecast-project.netlify.app/"
-        target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <main>
+        <div class="weather-app-data">
+          <div class="city-date-data">
+            <p class="date" id="time"></p>
+            <h1 id="city"></h1>
+          </div>
+          <div class="temperature-info"></div>
+          <div id="icon"></div>
+          <div class="weather-app-temperature-wrapper"></div>
+          <div class="weather-app-temperature" id="temperature"></div>
+          <div class="weather-app-unit">°C</div>
+          <div>
+            <div>
+              <h3>Condition:</h3>
+              <p><strong id="description"></strong></p>
+            </div>
+            <div>
+              <h3>Humidity:</h3>
+              <p><strong id="humidity"></strong></p>
+            </div>
+            <div>
+              <h3>Wind:</h3>
+              <p><strong id="wind-speed"></strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Habba101" target="_blank">Rahaba</a>
+        Motaung, is open-sourced on
+        <a href="https://github.com/Habba101?tab=repositories" target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a
+          href="https://habbas-weather-forecast-project.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -49,11 +49,11 @@ header {
 }
 
 .search-form-button {
-  background: linear-gradient(to bottom, #4facfe, #00f2fe);
+  background: rgb(13, 10, 201);
   padding: 15px 30px;
   border: none;
   font-size: 20px;
-  margin-right: 50px;
+
   border-radius: 6px;
   color: white;
 }
@@ -72,9 +72,13 @@ main {
 }
 
 h1 {
-  font-size: 54px;
-  line-height: 18px;
+  font-size: 36px;
   font-weight: 100;
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  white-space: normal;
 }
 
 .date {
@@ -88,6 +92,7 @@ h1 {
 
 .weather-app-temperature-container {
   display: grid;
+  margin-top: -20px;
 }
 
 .temperature-info {
@@ -110,6 +115,7 @@ h1 {
 
 .weather-condition {
   font-size: 40px;
+  margin-top: 2px;
 }
 
 .weather-forecast {
@@ -150,6 +156,6 @@ footer {
   border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(0, 0, 0, 0.6);
 }
